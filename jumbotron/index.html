@@ -10,6 +10,8 @@
   <title>Dr. Ivan Borges Médico Urologista</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
 
   <!-- Bootstrap core CSS -->
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,52 +37,38 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <!--<a class="navbar-brand" href="#">Menu</a>-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav style="height: 80px" class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+    <div class="container">
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <!--<li class="nav-item active">-->
-        <!--<a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>-->
-        <li class="nav-item"></li>
-        <a class="nav-link" href="#">Início </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Apresentação</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tratamento</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contato e Localização</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://api.whatsapp.com/send?phone=5551991646445" target="_blank">Agende a Sua
-            Consulta</a>
-        </li>
-        <!--<li class="nav-item">
-        <a class="nav-link" href="#">Localização</a>
-      </li>-->
-        <!--<li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>-->
-        <!--<li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>-->
-      </ul>
-      <!--<form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>-->
+      <a class="navbar-brand" href=""></a>
+      <button style="color: rgb(255, 255, 255); background: rgb(0, 0, 0); width: 2.6em; height: 2.4em;"
+        class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarSite" class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="d-block text-truncate px-1">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#apresentação">Apresentação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tratamento">Tratamento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato e Localização</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://api.whatsapp.com/send?phone=5551991646445" target="_blank">Agende a
+              Sua
+              Consulta <span class="iconify" data-icon="mdi:calendar-multiple-check"></span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
     </div>
   </nav>
 
@@ -89,11 +77,11 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h2 class="display-4">
+        <h2 class="display-4 tituloText">
           <!--<center>Consultório médico de Urologia <br>Dr. Ivan Borges <br><br></center>-->
           <center>Muito mais do que prevenir câncer de próstata: quero te ajudar a viver com mais saúde e bem-estar!
           </center><br>
-          <h2 class="display-4">
+          <h2 id="apresentação" class="display-4 tituloText">
             <center>Apresentação</center>
           </h2>
           <p>
@@ -123,46 +111,20 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe></center>
         </div>
-        <!--ALIGN=LEFT-->
-        <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
-
       </div>
     </div>
-
-    <!--Informações
-    <div class="container">
-      <!-- Example row of columns 
-      <h2 class="display-4">
-        <center>Especialidades no tratamento das seguintes doenças<br><br></center>
-      </h2>
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-      <hr>
-    </div>
-  -->
-    <div class="row" id="informacoes">
+<div>
+    <div class="container-fluid row justify-content-md-center" id="tratamento">
       <div class="sitebuilder-element-receiver col-md-12"
         style="border-radius: 0px; background: rgba(238, 235, 245, 0.42); height: 100px;  min-height: 50px; border: 0px none rgb(0, 0, 0); box-shadow: blue 0px 0px 0px 0px;">
         <span>
           <h2 style="text-align: center;">
             <span style="font-family:Montserrat,sans-serif;">
               <span style="color: rgb(255, 255, 255); -webkit-text-fill-color: rgb(255, 255, 255);">
-                <span style="font-size:36px;"><span style="text-shadow: rgb(0, 0, 0) 1px 1px 1px;">
-                    <span style="text-shadow: rgb(0, 0, 0) 2px 1px 2px;">Dr. Ivan Borges tem especialidade no tratamento
+                <span style="font-size:36px;">
+                  <span style="text-shadow: rgb(0, 0, 0) 1px 1px 1px;">
+                    <span style="text-shadow: rgb(0, 0, 0) 2px 1px 2px; font-size: 2rem;">Dr. Ivan Borges tem
+                      especialidade no tratamento
                       das seguintes doenças
                     </span>
                   </span>
@@ -172,37 +134,27 @@
           </h2>
         </span>
       </div>
-      <div class="col-md-12"
-        style="border-radius: 10px;background: rgba(255, 255, 255, 0.525);border: 0px none rgb(0, 0, 0);box-shadow: rgba(214, 115, 209, 0.3) 1px 3px 14px 0px;">
-        <div data-v-1fd26c66="" class="vdr">
-          <div data-v-1fd26c66="" class="container-accordion-group"
-            style="border-radius: 10px; background: rgba(255, 255, 255, 0); border: 0px none rgb(0, 0, 0); padding: 3px;">
-            <div class="row">
-              <div class="col-md-12">
-                <button data-v-853f660e="" data-toggle="collapse" data-target="#collapse1590961916121"
-                  aria-expanded="false" aria-controls="collapse1590961916121"
-                  class="btn btn-link w-100 h-100 icon-place desktop-element collapsed">
-                  FIMOSE <span class="iconify" data-icon="mdi:chevron-double-down">
-                    </i></button>
-                </i></button>
-              </div>
-              <div class="col-md-12">
-                <button data-v-853f660e="" data-toggle="collapse" data-target="#collapse1590961916121"
-                  aria-expanded="false" aria-controls="collapse1590961916121"
-                  class="btn btn-link w-100 h-100 icon-place desktop-element collapsed">
-                  CÂNCER DE PRÓSTATA E OUTROS TUMORES DO TRATO URINÁRIO <span class="iconify"
-                    data-icon="mdi:chevron-double-down">
-                    </i></button>
-                </i></button>
-              </div>
-              <div class="col-md-12">
-                <button data-v-853f660e="" data-toggle="collapse" data-target="#collapse1590961916121"
-                  aria-expanded="false" aria-controls="collapse1590961916121"
-                  class="btn btn-link w-100 h-100 icon-place desktop-element collapsed">
-                  CÁLCULO RENAL <span class="iconify" data-icon="mdi:chevron-double-down">
-                    </i></button>
-                </i></button>
-              </div>
+      <div style="border-radius: 10px;background: rgba(255, 255, 255, 0.525);border: 0px none rgb(0, 0, 0); margin-bottom: 15%;">
+        <div class="container-accordion-group"
+          style="border-radius: 10px; background: rgba(255, 255, 255, 0); border: 0px none rgb(0, 0, 0); padding: 3px;">
+          <div class="row">
+            <div class="col-md-12">
+              <button style="color:black;" data-toggle="collapse" aria-expanded="false"
+                class="btn btn-link w-100 h-100 icon-place desktop-element collapsed">
+                FIMOSE <span class="iconify" data-icon="mdi:chevron-double-down">
+              </button>
+            </div>
+            <div class="col-md-12">
+              <button data-toggle="collapse" class="btn btn-link w-100 h-100  ">
+                CÂNCER DE PRÓSTATA E OUTROS TUMORES DO TRATO URINÁRIO
+                <span class="iconify" data-icon="mdi:chevron-double-down">
+              </button>
+            </div>
+            <div class="col-md-12">
+              <button data-toggle="collapse" aria-expanded="false"
+                class="btn btn-link w-100 h-100 icon-place desktop-element collapsed">
+                CÁLCULO RENAL <span class="iconify" data-icon="mdi:chevron-double-down">
+              </button>
             </div>
             <hr>
           </div>
@@ -210,19 +162,18 @@
       </div>
     </div>
 
+    <br>
     <!--Contato e localização do consultório-->
-    <div style="text-align: center;" class="container">
+    <div id="contato" class="container-fluid">
       <div id="LocalizacaoEcontato">
-        <div class="col-md-12">
-          <h2 class="display-5">
-            Contato e Localização do Consultório<br>
-          </h2>
-          Agendamento de consultas com o Dr. Ivan Borges pode ser feito
-          preferencialmente através do celular/Whatsapp 51 9 9164 6445 <br>
+        <div style="text-align: center;" class="col-md-12">
+          <h2 class="display-5">Contato e Localização do Consultório<br></h2>
 
-          <p align="justify">O consultório do Dr. Ivan Borges está localizado na
+          Agendamento de consultas com o Dr. Ivan Borges pode ser feito
+          preferencialmente através do celular/Whatsapp (51) 99164 6445.
+          <p>O consultório do Dr. Ivan Borges está localizado na
             Av. Senador Tarso Dutra, 161, sala 1006 - Bairro Petrópolis
-            Condomínio Axis Office - Cep 90690140 - Porto Alegre - RS<br></p>
+            Condomínio Axis Office - Cep 90690140 - Porto Alegre - RS.<br></p>
           <br><br>
           <div class="video">
             <center><iframe
@@ -236,16 +187,19 @@
 
   </main>
 
+  
+<div style="border-radius: 0px;background: rgba(16, 95, 128, 0.996);height: 300px; min-height: 50px;border: 0px none rgb(0, 0, 0); color:white;">
   <footer class="container">
-    <div class="col-md-6">
+    <div class="col-md-3">
       <p>&copy; Dr. Ivan Borges - Médico Urologista <br>
         Cremers 35656 - RQE 38168</p>
     </div>
-    <div class="col-md-6"></div>
-    <p>"Cada pessoa é um mundo..." <br>
-      Clarice Lispector</p>
+    <div style="text-align: center;" class="col-md-12">
+      <p>"Cada pessoa é um mundo..." <br>
+        Clarice Lispector</p>
     </div>
   </footer>
+</div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
