@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Ouvidoria - CAFF</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      
+      textarea {
+          resize: none;
+      }
+      
+      #count_message {
+        background-color: lightgray;
+        margin-top: -20px;
+        margin-right: 5px;
+      } 
+     
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <!-- <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+    <img class="d-block mx-auto mb-4" src="../assets/brand/3.jpg" alt="" width="500" height="300">
+    <h2>Ouvidoria CAFF</h2>
+    <p class="lead">Olá! Seja muito bem vindo ao sistema de ouvidoria do CAFF. Nós queremos te escutar! Por gentileza, preencha os seus dados e registre a sua sugestão, elogio, informação ou reclamação no nosso sistema de atendimento. A sua solicitação será atendida o mais breve possível. Obrigado por nos contatar!</p>
+  </div>
+
+  
+    <div class="col-md-12 order-md-1">
+      <h4 class="mb-3">Preencha os seus dados</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="nome">Nome </label>
+            <input type="text" class="form-control" id="nome" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Por favor, informe um nome válido!
+            </div>
+          </div>
+        <div class="col-md-6 mb-3">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Por favor, informe um sobrenome válido!
+            </div>
+          </div>
+        </div> 
+
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="email@exemplo.com.br" required>
+          <div class="invalid-feedback">
+            Por favor, informe um email válido!
+          </div>
+        </div> 
+
+        <div class="mb-3">
+          <label for="telefone">Telefone</label>
+          <input type="text" class="form-control" id="telefone" placeholder="(xx) x xxxx-xxxx" required>
+          <div class="invalid-feedback">
+            Por favor, informe um telefone válido!
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="setor">Setor</label>
+            <select class="custom-select d-block w-100" id="setor" required>
+              <option value="">Selecionar...</option>
+              <option>DINFO</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor, selecione um setor da SEPLAG!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="motivo_contato">Motivo do Contato</label>
+            <select class="custom-select d-block w-100" id="motivo_contato" required>
+              <option value="">Selecionar...</option>
+              <option>Elogio</option>
+              <option>Informação</option>
+              <option>Sugestão</option>
+              <option>Reclamação</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor, selecione o motivo do contato!
+            </div>
+          </div>
+        </div> <!-- fechamento do  <div class="row"> dos 2 campos de seleção  -->
+
+      <br/><br/>
+          <h4 class="mb-3">Mensagem</h4>
+      <div class="mb-3">
+       <!-- <label>Sua mensagem</label>-->   <!-- <a style="color:red;" title="Campo obrigatório"> * </a>  -->
+       <form accept-charset="UTF-8" action="" method="POST">
+        <textarea class="form-control" id="mensagem_ouvidoria" maxlength="10" rows="10" placeholder="Digite a sua mensagem" required></textarea> 
+        <span class="pull-right label label-default" id="count_message"></span>
+        <br><br>
+        <button class="btn btn-info" type="submit">Enviar formulário</button>
+        <br>
+        <div class="invalid-feedback">
+            Por favor, preencha a mensagem do seu contato!
+       </div>
+       </form>   
+      </div>
+    
+    
+      </form>
+    </div>
+  </div>  <!--fechamento da <div class="row">-->
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2020 SEPLAG - CAFF - RS </p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="form-validation.js"></script> 
+    <script>
+      var text_max = 200;
+      $('#count_message').html('0 / ' + text_max );
+
+      $('#mensagem_ouvidoria').keyup(function() {
+        var text_length = $('#mensagem_ouvidoria').val().length;
+        var text_remaining = text_max - text_length;
+        
+        $('#count_message').html(text_length + ' / ' + text_max);
+      });
+   </script> 
+ </body>
+</html>

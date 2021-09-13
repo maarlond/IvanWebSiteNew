@@ -1,0 +1,28 @@
+ <br/><br/>
+      <h4 class="mb-3">Mensagem</h4>
+      <div class="mb-3">
+       <!-- <label>Sua mensagem</label>-->   <!-- <a style="color:red;" title="Campo obrigatório"> * </a>  -->
+       <form accept-charset=""UTF-8" action="" method="POST">
+        <textarea class="form-control" id="mensagem_ouvidoria" maxlenght="10" rows="10" required></textarea> 
+        <span class="pull-right label label-default" id="count_message"></span>
+        <br>
+        <div class="invalid-feedback">
+            Por favor, preencha a mensagem do seu contato!
+       </div>
+       </form>   
+      </div>
+
+
+<div class="row">
+        <div class="col-md-4 mb-3">
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar mensagem</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+

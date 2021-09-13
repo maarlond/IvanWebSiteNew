@@ -1,0 +1,19 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+
+.video iframe {
+  width: 80%;
+  height: 315px;
+  position: relative;
+}
+
+#informacoes {
+  border-radius: 0px;
+  background: url(../assets/brand/urologia3.jpg) center center / 100% 100%
+    no-repeat fixed content-box rgb(255, 255, 255);
+  height: 602px;
+  min-height: 46px;
+  border: 0px none rbg(0, 0, 0);
+}
