@@ -21,20 +21,25 @@ body {
   background-color: rgba(16, 95, 128, 0.996);
 }
 .video iframe {
-  width: 70%;
+  width: 50%;
   height: 300px;
   position: relative;
 }
 
 .tituloText {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
+
 
 #tratamento {
   border-radius: 0px;
   background: url(../assets/brand/urologia.png) center center / 100% 100%
     no-repeat fixed content-box rgb(255, 255, 255);
-  height: 602px;
+  height: 702px;
   min-height: 46px;
   border: 0px none rbg(0, 0, 0);
+  
+  white-space: nowrap;
+  overflow: hidden;
+  
 }
