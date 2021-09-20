@@ -2,6 +2,10 @@
 body {
   padding-top: 3.5rem;
 }
+#website h2 {
+  color: rgba(16, 95, 128, 0.996);
+  font-style: bold;
+}
 
 #navbarSite a {
   font-family: Montserrat, sans-serif;
@@ -15,31 +19,48 @@ body {
   --menu-item-background: rgba(245, 248, 250, 0.5);
   --menu-item-background--hover: rgba(100, 111, 121, 0.148438);
   --menu-item-background-active: #f5f8faff;
-  padding: 10px 35px;
+  padding: 13px 35px;
   height: 50px;
   border-radius: 2px;
   background-color: rgba(16, 95, 128, 0.996);
 }
+
+#navbarSite a:hover {
+  background-color: #0090b8;
+}
 .video iframe {
-  width: 50%;
+  width: 70%;
   height: 300px;
   position: relative;
 }
 
 .tituloText {
-  font-size: 2rem;
+  font-size: clamp(1.75em, 1em + 3vw, 2.5em);
 }
-
 
 #tratamento {
   border-radius: 0px;
-  background: url(../assets/brand/urologia.png) center center / 100% 100%
+  background: url(../assets/brand/urologia7.jpg) center center / 100% 100%
     no-repeat fixed content-box rgb(255, 255, 255);
-  height: 702px;
   min-height: 46px;
   border: 0px none rbg(0, 0, 0);
-  
-  white-space: nowrap;
   overflow: hidden;
-  
+}
+
+#tratamento p {
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+#tratamento a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1em;
+
+}
+.info {
+  background-color: #0090b8;
+  color: white;
+  z-index: 999;
 }
